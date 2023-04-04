@@ -1,8 +1,15 @@
 ---
-title: "First Attempt at PowerPoint"
+title: "Introduction to RMarkdown"
 author: "Barry DeCicco"
 date: "5/13/2020"
 output: powerpoint_presentation
+params:
+  year: 2018
+  start_date: "2022-01-01"
+  end_date:   "2022-21_31"
+  region: Europe
+  data_file: file.csv
+
 ---
 
 ```{r setup,  collapse=TRUE, echo=FALSE}  
