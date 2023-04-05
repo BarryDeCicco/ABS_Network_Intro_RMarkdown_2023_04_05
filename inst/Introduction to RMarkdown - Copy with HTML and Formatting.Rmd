@@ -1,0 +1,151 @@
+---
+title: "Introduction to RMarkdown"
+subtitle: "For ABS Network Lunch and Learn" 
+author: "Barry DeCicco"
+date: "5/13/2020"
+output: powerpoint_presentation
+params:
+  year: 2018
+  start_date: "2022-01-01"
+  end_date:   "2022-21_31"
+  region: Europe
+  data_file: file.csv
+
+---
+
+```{r setup,  collapse=TRUE, echo=FALSE, include=FALSE}  
+
+# load libraries as needed:
+
+library(psych)
+library(tidyverse)
+library(readr)
+
+library(pastecs)
+# https://stats.idre.ucla.edu/r/faq/how-can-i-get-a-table-of-basic-descriptive-statistics-for-my-variables/
+# library(devtools)
+# devtools::install_github("alastairrushworth/inspectdf")
+
+library(inspectdf)   
+# https://www.r-bloggers.com/part-2-simple-eda-in-r-with-inspectdf/
+
+library(summarytools)
+library(Hmisc)
+library(inspectdf)
+library(janitor)
+library(htmlTable) 
+library(kableExtra)
+
+
+```
+
+```{r setup_not_used, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+
+```
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.  When moving between different outputs, you might need to change the document.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+An R Markdown document consist of a header, text and code chunks.
+R will run the code in the code chunks and render the results, mixing 
+the output with the text.
+
+
+## Languages
+
+Blocks of code usually start with "``` {r chunkname, options}" and end with
+"```".  The 'r' in the name tells R Markdown to use r to run the chunk.
+"``` {python chunkname, options}" would cause the chunk to be run in python.
+
+- There are at least 50 languages available.
+- You will have to set up the language(s) in the options.
+- These chunks will likely start and end in an independent run of the language; 
+you will have to import and export results.
+
+
+## Chunk Options
+
+- **echo=FALSE**     This will prevent the code from being displayed.
+- **message=FALSE**  This will prevent messages from being displayed.
+- **warning=FALSE**  This will prevent warnings from being displayed.
+- **include=FALSE**  This will prevent **everything** from being displayed.
+- **eval=FALSE**     This will prevent the chunk from being run.
+
+## Inline code
+
+The results of any 'r' chunk are available in both the following chunks or
+in the text.  Some things can be computed more automatically:
+"format(Sys.time(), '%d %B, %Y')" started in: back-tick, r  and ended with
+a back-tick, will cause R Markdown to process it as r code:
+`r format(Sys.time(), '%d %B, %Y')`
+
+## Parameters and calling other files
+
+R Markdown can use parameters within and between documents.
+For example, putting this into the header will cause a list, 'Params' to 
+be created with the following names and values:
+
+params:<p>
+  year: 2018<p>
+  start_date: "2022-01-01"<p>
+  end_date:   "2022-21_31"<p>
+  region: Europe<p>
+  data_file: file.csv<p>
+
+### Parameters and calling other files
+
+One R Markdown file can call another, passing on parameters either
+implicitly (using the default parameters in the header) or expliclitly,
+passing a newly-specified list of parameters.
+
+The called file can be called either as a fresh session, inheriting only
+the parameters passed, or in a continuation of the existing session,
+inheriting the full environment.
+
+
+## Table of Contents, Code Folding
+
+The following commands in the head will:
+
+Display a table of contents (TOC)<p>
+The TOC floats on the current page as you page down<p>
+The TOC has 4 layers of depth (e.g., section 4, 4.1, 4.1.1, ...)<p>
+The code is hidden by default, with a button to display it<p>
+
+## Code for TOC and Code Folding
+
+output:<p>
+   html_document:<p>
+        toc: true # table of contents true<p>
+        toc_depth: 4 # up to four depths of headings<p>
+        number_sections: true  #number sections at each table header<p>
+        toc_float:  true  #to see table of contents on side\<p>
+        code_folding: hide<p>
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure, echo = TRUE }
+plot(pressure)
+```
+
+## References:
+
+- Rstudio's reference:  https://rmarkdown.rstudio.com/
+- 'R Markdown: The Definitive Guide': https://bookdown.org/yihui/rmarkdown/
+- 'R Markdown Cookbook': https://bookdown.org/yihui/rmarkdown-cookbook/
+
+
+
