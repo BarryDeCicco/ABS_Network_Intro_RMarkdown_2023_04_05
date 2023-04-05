@@ -1,5 +1,6 @@
 ---
 title: "Introduction to RMarkdown"
+subtitle: "For ABS Network Lunch and Learn" 
 author: "Barry DeCicco"
 date: "5/13/2020"
 output: powerpoint_presentation
@@ -52,9 +53,8 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
 ## Chunk Options
-(from: https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html)
 
-- **echo=FALSE**     This will prevent the code from being displayed.  
+- **echo=FALSE**     This will prevent the code from being displayed.
 - **message=FALSE**  This will prevent messages from being displayed.
 - **warning=FALSE**  This will prevent warnings from being displayed.
 - **include=FALSE**  This will prevent **everything** from being displayed.
@@ -73,4 +73,12 @@ summary(cars)
 ```{r pressure, echo = TRUE }
 plot(pressure)
 ```
+
+## References:
+
+- Rstudio's reference:  https://rmarkdown.rstudio.com/
+- 'R Markdown: The Definitive Guide': https://bookdown.org/yihui/rmarkdown/
+- 'R Markdown Cookbook': https://bookdown.org/yihui/rmarkdown-cookbook/
+
+
 
