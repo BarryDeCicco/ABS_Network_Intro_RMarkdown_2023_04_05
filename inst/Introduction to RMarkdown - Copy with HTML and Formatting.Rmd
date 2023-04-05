@@ -9,12 +9,7 @@ output:
   toc_depth: 4 
   number_sections: true 
   toc_float: true 
-params:
-  year: 2018
-  start_date: "2022-01-01"
-  end_date:   "2022-21_31"
-  region: Europe
-  data_file: file.csv
+
 
 ---
 
