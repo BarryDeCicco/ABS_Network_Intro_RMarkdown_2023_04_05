@@ -2,13 +2,16 @@
 title: "Introduction to RMarkdown"
 subtitle: "For ABS Network Lunch and Learn" 
 author: "Barry DeCicco"
-date: "5/13/2020"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
-  html_document:
-  toc: true 
-  toc_depth: 4 
-  number_sections: true 
-  toc_float: true 
+   html_document:
+        toc: true # table of contents true
+        toc_depth: 4 # up to four depths of headings
+        number_sections: true  #number sections at each table header
+        toc_float:  true  #to see table of contents on side\
+        theme: united
+        highlight: tango  #syntax highlighting styleknitr::opts_chunk$set(echo = TRUE)
+        code_folding: hide
 
 
 ---
