@@ -12,14 +12,9 @@ params:
 
 ---
 
-```{r setup,  collapse=TRUE, echo=FALSE}  
+```{r setup,  collapse=TRUE, echo=FALSE, include=FALSE}  
 
 # load libraries as needed:
-# 
-
-
-
-
 
 library(psych)
 library(tidyverse)
@@ -68,7 +63,7 @@ summary(cars)
 
 ## Slide with Plot
 
-```{r pressure}
+```{r pressure, echo = TRUE }
 plot(pressure)
 ```
 
