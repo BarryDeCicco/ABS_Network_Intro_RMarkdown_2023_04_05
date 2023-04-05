@@ -81,10 +81,11 @@ you will have to import and export results.
 
 The results of any 'r' chunk are available in both the following chunks or
 in the text.  Some things can be computed more automatically:
-"`r format(Sys.time(), '%d %B, %Y')`" will render the system time, formatted as
-a date:  `r format(Sys.time(), '%d %B, %Y')`
+"format(Sys.time(), '%d %B, %Y')" started in: back-tick, r  and ended with
+a back-tick. This will cause R Markdown to process it as r code:
+`r format(Sys.time(), '%d %B, %Y')`
 
-For example <code>`r format(Sys.time(), '%d %B, %Y')`</code>
+
 
 ## Slide with R Output
 
