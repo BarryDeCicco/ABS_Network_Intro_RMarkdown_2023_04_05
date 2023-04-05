@@ -84,7 +84,7 @@ in the text.  Some things can be computed more automatically:
 "`r format(Sys.time(), '%d %B, %Y')`" will render the system time, formatted as
 a date:  `r format(Sys.time(), '%d %B, %Y')`
 
-For example <code></code>
+For example <code>`r format(Sys.time(), '%d %B, %Y')`</code>
 
 ## Slide with R Output
 
