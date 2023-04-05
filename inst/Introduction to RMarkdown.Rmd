@@ -40,6 +40,8 @@ library(kableExtra)
 
 ```{r setup_not_used, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+
 ```
 
 
@@ -49,15 +51,20 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
-## Slide with Bullets
+## Chunk Options
+(from: https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html)
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+- **echo=FALSE**     This will prevent the code from being displayed.  
+- **message=FALSE**  This will prevent messages from being displayed.
+- **warning=FALSE**  This will prevent warnings from being displayed.
+- **include=FALSE**  This will prevent **everything** from being displayed.
+- **eval=FALSE**     This will prevent the chunk from being run.
+
 
 ## Slide with R Output
 
 ```{r cars, echo = TRUE}
+
 summary(cars)
 ```
 
