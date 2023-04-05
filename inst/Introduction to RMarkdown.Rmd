@@ -77,7 +77,14 @@ you will have to import and export results.
 - **include=FALSE**  This will prevent **everything** from being displayed.
 - **eval=FALSE**     This will prevent the chunk from being run.
 
+## Inline code
 
+The results of any 'r' chunk are available in both the following chunks or
+in the text.  Some things can be computed more automatically:
+"`r format(Sys.time(), '%d %B, %Y')`" will render the system time, formatted as
+a date:  `r format(Sys.time(), '%d %B, %Y')`
+
+For example <code></code>
 
 ## Slide with R Output
 
