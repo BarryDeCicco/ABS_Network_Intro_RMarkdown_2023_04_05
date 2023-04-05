@@ -3,7 +3,12 @@ title: "Introduction to RMarkdown"
 subtitle: "For ABS Network Lunch and Learn" 
 author: "Barry DeCicco"
 date: "5/13/2020"
-output: powerpoint_presentation
+output: 
+  html_document:
+  toc: true 
+  toc_depth: 4 
+  number_sections: true 
+  toc_float: true 
 params:
   year: 2018
   start_date: "2022-01-01"
