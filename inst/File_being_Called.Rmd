@@ -1,7 +1,7 @@
 ---
 title: "File Being Called"
 author: "Barry DeCicco"
-date: "2022-12-15"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 params:
   year: 2018
