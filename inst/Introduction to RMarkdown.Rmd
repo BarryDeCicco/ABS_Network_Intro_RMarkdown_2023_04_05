@@ -120,13 +120,13 @@ The code is hidden by default, with a button to display it<p>
 
 ## Code for TOC and Code Folding
 
-output:
-   html_document:
-        toc: true # table of contents true
-        toc_depth: 4 # up to four depths of headings
-        number_sections: true  #number sections at each table header
-        toc_float:  true  #to see table of contents on side\
-        code_folding: hide
+output:<p>
+   html_document:<p>
+        toc: true # table of contents true<p>
+        toc_depth: 4 # up to four depths of headings<p>
+        number_sections: true  #number sections at each table header<p>
+        toc_float:  true  #to see table of contents on side\<p>
+        code_folding: hide<p>
 
 ## Slide with R Output
 
