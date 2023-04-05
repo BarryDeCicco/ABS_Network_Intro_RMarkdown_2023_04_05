@@ -2,7 +2,7 @@
 title: "Introduction to RMarkdown"
 subtitle: "For ABS Network Lunch and Learn" 
 author: "Barry DeCicco"
-date: "5/13/2020"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: powerpoint_presentation
 params:
   year: 2018
