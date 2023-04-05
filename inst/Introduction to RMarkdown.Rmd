@@ -98,6 +98,17 @@ params:<p>
   region: Europe<p>
   data_file: file.csv<p>
 
+### Parameters and calling other files
+
+One R Markdown file can call another, passing on parameters either
+implicitly (using the default parameters in the header) or expliclitly,
+passing a newly-specified list of parameters.
+
+The called file can be called either as a fresh session, inheriting only
+the parameters passed, or in a continuation of the existing session,
+inheriting the full environment.
+
+
 ## Table of Contents, Code Folding
 
 The following commands in the head will:
