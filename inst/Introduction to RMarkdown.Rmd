@@ -82,8 +82,21 @@ you will have to import and export results.
 The results of any 'r' chunk are available in both the following chunks or
 in the text.  Some things can be computed more automatically:
 "format(Sys.time(), '%d %B, %Y')" started in: back-tick, r  and ended with
-a back-tick. This will cause R Markdown to process it as r code:
+a back-tick, will cause R Markdown to process it as r code:
 `r format(Sys.time(), '%d %B, %Y')`
+
+## Parameters and calling other files
+
+R Markdown can use parameters within and between documents.
+For example, putting this into the header will cause a list, 'Params' to 
+be created with the following names and values:
+
+params:
+  year: 2018
+  start_date: "2022-01-01"
+  end_date:   "2022-21_31"
+  region: Europe
+  data_file: file.csv
 
 
 
