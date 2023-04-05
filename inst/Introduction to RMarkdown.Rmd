@@ -48,9 +48,26 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## R Markdown
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.  When moving between different outputs, you might need to change the document.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+An R Markdown document consist of a header, text and code chunks.
+R will run the code in the code chunks and render the results, mixing 
+the output with the text.
+
+
+## Languages
+
+Blocks of code usually start with "``` {r chunkname, options}" and end with
+"```".  The 'r' in the name tells R Markdown to use r to run the chunk.
+"``` {python chunkname, options}" would cause the chunk to be run in python.
+
+- There are at least 50 languages available.
+- You will have to set up the language(s) in the options.
+- These chunks will likely start and end in an independent run of the language; 
+you will have to import and export results.
+
 
 ## Chunk Options
 
@@ -59,6 +76,7 @@ When you click the **Knit** button a document will be generated that includes bo
 - **warning=FALSE**  This will prevent warnings from being displayed.
 - **include=FALSE**  This will prevent **everything** from being displayed.
 - **eval=FALSE**     This will prevent the chunk from being run.
+
 
 
 ## Slide with R Output
