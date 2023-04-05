@@ -91,14 +91,31 @@ R Markdown can use parameters within and between documents.
 For example, putting this into the header will cause a list, 'Params' to 
 be created with the following names and values:
 
-params:
-  year: 2018
-  start_date: "2022-01-01"
-  end_date:   "2022-21_31"
-  region: Europe
-  data_file: file.csv
+params:<p>
+  year: 2018<p>
+  start_date: "2022-01-01"<p>
+  end_date:   "2022-21_31"<p>
+  region: Europe<p>
+  data_file: file.csv<p>
 
+## Table of Contents, Code Folding
 
+The following commands in the head will:
+
+Display a table of contents (TOC)<p>
+The TOC floats on the current page as you page down<p>
+The TOC has 4 layers of depth (e.g., section 4, 4.1, 4.1.1, ...)<p>
+The code is hidden by default, with a button to display it<p>
+
+## Code for TOC and Code Folding
+
+output:
+   html_document:
+        toc: true # table of contents true
+        toc_depth: 4 # up to four depths of headings
+        number_sections: true  #number sections at each table header
+        toc_float:  true  #to see table of contents on side\
+        code_folding: hide
 
 ## Slide with R Output
 
